@@ -7,14 +7,14 @@
   <meta name="keywords" content="">
 
   <script type="text/javascript">
-    function LoadPage() {
+    function load() {
       document.getElementById('blog').src = "https://wordpress.kaven.xyz:5559" +
         location.href.substr(location.href.indexOf("/", 8));
     }
   </script>
 </head>
 
-<frameset rows="100%,*" border="0">
+<frameset rows="100%,*" border="0" onload="load">
   <frame id="blog" frameborder="0" />
 </frameset>
 
