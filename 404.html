@@ -5,10 +5,17 @@
   <title>Kaven Blog</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+
+  <script type="text/javascript">
+    function LoadPage() {
+      document.getElementById('blog').src = "https://wordpress.kaven.xyz:5559" +
+        location.href.substr(location.href.indexOf("/", 8));
+    }
+  </script>
 </head>
 
 <frameset rows="100%,*" border="0">
-  <frame src="https://wordpress.kaven.xyz:5559" frameborder="0" />
+  <frame id="blog" frameborder="0" />
 </frameset>
 
 </html>
